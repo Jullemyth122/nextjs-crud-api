@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: #3b3b3b;
+}
+
+.process-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.creating-items,.editing-items {
+    width: 403px;
+    height: 235px;
+    padding: 10px;
+    display: grid;
+    background: #1F1F1F;
+    border-radius: 15px;
+
+    & > * {
+        align-self: center;
+        justify-self: center;
+    }
+
+    
+    input,button {
+        width: 300px;
+        color: #fff;
+        padding: 7.5px;
+        outline: none;
+        border: 0px;
+        background: #555555;
+        border-radius: 5px;
+        box-shadow: 0px 10px 10px rgba(8, 8, 8, 0.507);
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    button {
+        background: rgb(70, 143, 238);
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+
+.loading-button {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        padding: 10px;
+        border: 0px;
+        outline: none;
+        color: #fff;
+        background: rgb(70, 143, 238);
+        border-radius: 5px;
+        box-shadow: 0px 10px 10px rgba(8, 8, 8, 0.507);
+        width: 100px;
+        cursor: pointer;
+    }
+    
+}
+
+.list-items {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+.static-post {
+    border-radius: 10px;
+    background: #1F1F1F;
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-posted {
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+
+    & > * {
+        justify-self: center;
+        align-self: center;
+        width: 300px;
+        color: #fff;
+        padding: 7.5px;
+        outline: none;
+        border: 0px;
+        background: #555555;
+        border-radius: 5px;
+        box-shadow: 0px 10px 10px rgba(8, 8, 8, 0.507);
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
